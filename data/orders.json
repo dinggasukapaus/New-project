@@ -58,7 +58,6 @@
     "total_price": 30000,
     "payment_status": "Lunas",
     "order_status": "Diambil",
-    "notes": "",
     "created_at": "2026-05-10",
     "estimated_done_at": "2026-05-12",
     "handled_by": "Budi Santoso"
@@ -138,7 +137,6 @@
     "total_price": 35000,
     "payment_status": "Lunas",
     "order_status": "Selesai",
-    "notes": "",
     "created_at": "2026-05-05",
     "estimated_done_at": "2026-05-07",
     "handled_by": "Rina Lestari"
@@ -152,8 +150,8 @@
     "weight": 1,
     "price_per_unit": 25000,
     "total_price": 25000,
-    "payment_status": "Lunas",
-    "order_status": "Disetrika",
+    "payment_status": "Belum Bayar",
+    "order_status": "Diproses",
     "notes": "Selimut tebal.",
     "created_at": "2026-05-04",
     "estimated_done_at": "2026-05-07",
