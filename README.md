@@ -75,7 +75,7 @@ Buka `http://localhost:8000`.
 
 File `.pages.yml` mendefinisikan:
 
-- Media folder: `uploads/images` dengan output `/uploads/images`.
+- Media folder: `uploads/images` dengan output relatif `uploads/images`.
 - Business Settings: `data/settings.json`.
 - Services: `data/services.json`.
 - Prices: `data/prices.json`.
@@ -92,7 +92,7 @@ Pemilik dapat mengubah nama bisnis, hero, nomor WhatsApp, harga, layanan, testim
 
 ## Mengelola Media
 
-Upload gambar melalui field bertipe `image` di Pages CMS. File akan disimpan ke `uploads/images/`, dan URL yang masuk ke JSON memakai format `/uploads/images/nama-file`.
+Upload gambar melalui field bertipe `image` di Pages CMS. File akan disimpan ke `uploads/images/`, dan URL yang masuk ke JSON memakai format relatif `uploads/images/nama-file`.
 
 ## Konsep Role
 

@@ -1,6 +1,6 @@
 media:
   input: uploads/images
-  output: /uploads/images
+  output: uploads/images
 
 content:
   - name: business_settings

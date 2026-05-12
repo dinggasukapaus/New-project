@@ -3,21 +3,21 @@
     "name": "Dewi Kartika",
     "message": "Cuciannya wangi dan lipatannya rapi. Enak sekali bisa cek status pesanan lewat invoice.",
     "rating": 5,
-    "photo": "/uploads/images/customer-dewi.svg",
+    "photo": "uploads/images/customer-dewi.svg",
     "active": true
   },
   {
     "name": "Andi Prasetyo",
     "message": "Layanan express sangat membantu saat butuh baju kerja cepat. Adminnya responsif.",
     "rating": 5,
-    "photo": "/uploads/images/customer-andi.svg",
+    "photo": "uploads/images/customer-andi.svg",
     "active": true
   },
   {
     "name": "Maya Salsabila",
     "message": "Antar jemputnya tepat waktu, harga jelas, dan hasil setrika halus.",
     "rating": 4,
-    "photo": "/uploads/images/customer-maya.svg",
+    "photo": "uploads/images/customer-maya.svg",
     "active": true
   }
 ]

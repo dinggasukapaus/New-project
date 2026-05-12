@@ -1,19 +1,19 @@
 [
   {
     "title": "Area Packing",
-    "image": "/uploads/images/gallery-packing.svg",
+    "image": "uploads/images/gallery-packing.svg",
     "description": "Setiap order diberi label invoice sebelum dikemas.",
     "active": true
   },
   {
     "title": "Ruang Setrika",
-    "image": "/uploads/images/gallery-ironing.svg",
+    "image": "uploads/images/gallery-ironing.svg",
     "description": "Pakaian disetrika sesuai jenis kain agar tetap aman.",
     "active": true
   },
   {
     "title": "Antar Jemput",
-    "image": "/uploads/images/gallery-delivery.svg",
+    "image": "uploads/images/gallery-delivery.svg",
     "description": "Kurir siap membantu pelanggan di area Jember kota.",
     "active": true
   }
