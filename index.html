@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fresh Laundry Indonesia | Laundry UMKM Modern di Jember</title>
+    <meta name="description" content="Fresh Laundry Indonesia menyediakan cuci kering, cuci setrika, express, bed cover, sepatu, dan antar jemput di Jember. Cek harga dan status pesanan online.">
+    <meta name="keywords" content="laundry jember, laundry kiloan, cuci setrika, laundry express, UMKM laundry">
+    <meta name="author" content="Fresh Laundry Indonesia">
+    <meta property="og:title" content="Fresh Laundry Indonesia">
+    <meta property="og:description" content="Laundry bersih, cepat, dan wangi untuk warga Jember.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/uploads/images/hero-laundry.svg">
+    <meta property="og:locale" content="id_ID">
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body data-page="home">
+    <header class="site-header" id="top">
+      <nav class="navbar container" aria-label="Navigasi utama">
+        <a class="brand" href="#home" aria-label="Fresh Laundry Indonesia">
+          <span class="brand-mark">FL</span>
+          <span data-setting="business_name">Fresh Laundry Indonesia</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-menu">
+          <a href="#tentang">Tentang</a>
+          <a href="#layanan">Layanan</a>
+          <a href="#harga">Harga</a>
+          <a href="#cek-status">Cek Status</a>
+          <a href="#kontak">Kontak</a>
+          <a class="btn btn-small" href="#order">Order</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-setting="tagline">Laundry bersih, cepat, dan wangi untuk warga Jember.</p>
+            <h1 data-setting="hero_title">Laundry bersih dan siap pakai tanpa ribet</h1>
+            <p data-setting="hero_subtitle">Pesan lewat WhatsApp, pantau status invoice, dan nikmati cucian rapi dengan layanan profesional untuk kebutuhan harian Anda.</p>
+            <div class="hero-actions">
+              <a class="btn" href="#order">Order Sekarang</a>
+              <a class="btn btn-ghost" href="#kalkulator">Hitung Harga</a>
+            </div>
+            <div class="hero-stats" aria-label="Ringkasan layanan">
+              <span><strong>7</strong> Layanan</span>
+              <span><strong>10+</strong> Sample order</span>
+              <span><strong>CMS</strong> Pages CMS</span>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img data-setting-image="hero_image" src="/uploads/images/hero-laundry.svg" alt="Ilustrasi layanan laundry Fresh Laundry Indonesia">
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tentang">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Tentang Kami</p>
+            <h2>Laundry lokal yang rapi secara layanan dan data.</h2>
+          </div>
+          <div class="content-panel">
+            <p data-setting="description">Fresh Laundry Indonesia membantu UMKM, keluarga, kos, dan kantor mengurus cucian harian dengan layanan cuci kering, cuci setrika, express, bed cover, sepatu, serta antar jemput.</p>
+            <div class="feature-list">
+              <span>Invoice tracking</span>
+              <span>Harga transparan</span>
+              <span>Order WhatsApp</span>
+              <span>Data JSON editable</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="layanan">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Layanan</p>
+            <h2>Pilih layanan sesuai kebutuhan cucian.</h2>
+          </div>
+          <div class="card-grid" id="services-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="harga">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Harga</p>
+            <h2>Daftar harga mudah diedit dari Pages CMS.</h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Layanan</th>
+                  <th>Unit</th>
+                  <th>Harga</th>
+                  <th>Estimasi</th>
+                </tr>
+              </thead>
+              <tbody id="prices-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="kalkulator">
+        <div class="container calculator-layout">
+          <div>
+            <p class="eyebrow">Kalkulator Harga Laundry</p>
+            <h2>Estimasi biaya sebelum order.</h2>
+            <p class="muted">Pilih layanan dan masukkan berat atau jumlah item. Total akan dihitung otomatis dalam Rupiah.</p>
+          </div>
+          <form class="tool-panel" id="calculator-form">
+            <label for="calculator-service">Layanan</label>
+            <select id="calculator-service" required></select>
+            <label for="calculator-qty">Berat / Jumlah</label>
+            <input id="calculator-qty" type="number" min="0.5" step="0.5" value="1" required>
+            <div class="result-box" id="calculator-result">Pilih layanan untuk melihat estimasi.</div>
+            <button class="btn" type="button" id="calculator-whatsapp">Order via WhatsApp</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" id="cek-status">
+        <div class="container calculator-layout">
+          <div>
+            <p class="eyebrow">Cek Status Pesanan</p>
+            <h2>Pantau order dengan nomor invoice.</h2>
+            <p class="muted">Contoh invoice: FLI-20260512-001. Data status dibaca langsung dari <code>data/orders.json</code>.</p>
+          </div>
+          <form class="tool-panel" id="tracking-form">
+            <label for="tracking-invoice">Nomor Invoice</label>
+            <input id="tracking-invoice" type="text" placeholder="FLI-20260512-001" required>
+            <button class="btn" type="submit">Cek Status</button>
+            <div class="result-box" id="tracking-result">Masukkan invoice untuk melihat status.</div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="galeri">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Galeri</p>
+            <h2>Aktivitas operasional laundry.</h2>
+          </div>
+          <div class="gallery-grid" id="gallery-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="testimoni">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Testimoni</p>
+            <h2>Apa kata pelanggan.</h2>
+          </div>
+          <div class="testimonial-grid" id="testimonials-list"></div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="faq">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">FAQ</p>
+            <h2>Pertanyaan yang sering muncul.</h2>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary>Apakah bisa antar jemput?</summary>
+              <p>Bisa untuk area Jember kota dan sekitarnya sesuai jadwal kurir.</p>
+            </details>
+            <details>
+              <summary>Bagaimana cara cek pesanan?</summary>
+              <p>Masukkan nomor invoice pada fitur Cek Status Pesanan di website.</p>
+            </details>
+            <details>
+              <summary>Apakah dashboard ini bisa edit data?</summary>
+              <p>Tidak. Dashboard publik hanya membaca data. Pengeditan dilakukan lewat Pages CMS dan izin GitHub.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="kontak">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Kontak</p>
+            <h2>Datang langsung atau order dari rumah.</h2>
+            <ul class="contact-list">
+              <li><strong>Alamat:</strong> <span data-setting="address"></span></li>
+              <li><strong>Telepon:</strong> <span data-setting="phone"></span></li>
+              <li><strong>Email:</strong> <span data-setting="email"></span></li>
+              <li><strong>Jam buka:</strong> <span data-setting="opening_hours"></span></li>
+            </ul>
+            <div class="social-links">
+              <a data-social="instagram_url" href="#">Instagram</a>
+              <a data-social="facebook_url" href="#">Facebook</a>
+              <a data-social="tiktok_url" href="#">TikTok</a>
+            </div>
+          </div>
+          <iframe id="maps-frame" title="Lokasi Fresh Laundry Indonesia" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+      <section class="section section-cta" id="order">
+        <div class="container order-layout">
+          <div>
+            <p class="eyebrow">Order via WhatsApp</p>
+            <h2>Isi format singkat, lalu kirim ke admin.</h2>
+          </div>
+          <form class="tool-panel" id="whatsapp-form">
+            <label for="wa-name">Nama</label>
+            <input id="wa-name" type="text" placeholder="Nama lengkap">
+            <label for="wa-address">Alamat</label>
+            <textarea id="wa-address" rows="3" placeholder="Alamat penjemputan"></textarea>
+            <label for="wa-phone">No. WhatsApp</label>
+            <input id="wa-phone" type="tel" placeholder="08...">
+            <label for="wa-service">Layanan</label>
+            <select id="wa-service"></select>
+            <label for="wa-qty">Berat / Jumlah</label>
+            <input id="wa-qty" type="text" placeholder="Contoh: 5 kg">
+            <label for="wa-notes">Catatan</label>
+            <textarea id="wa-notes" rows="3" placeholder="Catatan tambahan"></textarea>
+            <button class="btn" type="submit">Kirim Order WhatsApp</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <a class="floating-wa" id="floating-whatsapp" href="#" aria-label="Chat WhatsApp">WA</a>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> <span data-setting="business_name">Fresh Laundry Indonesia</span>. Dibangun untuk GitHub Pages + Pages CMS.</p>
+        <a href="admin-info.html">Dashboard Read-only</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

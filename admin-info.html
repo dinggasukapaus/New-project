@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard Read-only | Fresh Laundry Indonesia</title>
+    <meta name="description" content="Dashboard read-only Fresh Laundry Indonesia untuk melihat ringkasan order, pendapatan, pekerja, dan status pembayaran dari data JSON.">
+    <meta property="og:title" content="Dashboard Fresh Laundry Indonesia">
+    <meta property="og:description" content="Dashboard static read-only dari data JSON GitHub Pages.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body data-page="admin">
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Navigasi dashboard">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">FL</span>
+          <span>Fresh Laundry Indonesia</span>
+        </a>
+        <div class="nav-menu nav-menu-static">
+          <a href="index.html">Website</a>
+          <a class="btn btn-small" href="https://app.pagescms.org/" target="_blank" rel="noopener">Buka Pages CMS</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="admin-main">
+      <section class="section">
+        <div class="container">
+          <div class="dashboard-head">
+            <div>
+              <p class="eyebrow">Owner Dashboard</p>
+              <h1>Ringkasan operasional read-only.</h1>
+              <p class="muted">Data di halaman ini dibaca dari file JSON. Edit data dilakukan melalui Pages CMS dan izin repository GitHub.</p>
+            </div>
+            <span class="status-pill">Static Mode</span>
+          </div>
+
+          <div class="metric-grid" id="dashboard-cards"></div>
+
+          <section class="dashboard-section">
+            <div class="section-head">
+              <p class="eyebrow">Performa Pekerja</p>
+              <h2>Kontribusi berdasarkan order yang ditangani.</h2>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Pekerja</th>
+                    <th>Total Order</th>
+                    <th>Total Revenue</th>
+                    <th>Selesai</th>
+                    <th>Pending</th>
+                  </tr>
+                </thead>
+                <tbody id="worker-performance"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="dashboard-section">
+            <div class="section-head">
+              <p class="eyebrow">Order</p>
+              <h2>Tabel pesanan dan filter cepat.</h2>
+            </div>
+            <div class="filters">
+              <input id="filter-search" type="search" placeholder="Cari invoice atau customer">
+              <select id="filter-status">
+                <option value="">Semua status order</option>
+              </select>
+              <select id="filter-payment">
+                <option value="">Semua status pembayaran</option>
+              </select>
+              <select id="filter-worker">
+                <option value="">Semua pekerja</option>
+              </select>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Invoice</th>
+                    <th>Customer</th>
+                    <th>Layanan</th>
+                    <th>Total</th>
+                    <th>Pembayaran</th>
+                    <th>Status</th>
+                    <th>Handled by</th>
+                  </tr>
+                </thead>
+                <tbody id="orders-table"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Fresh Laundry Indonesia. Dashboard static/read-only.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "cuci-kering",
+    "name": "Cuci Kering",
+    "description": "Cucian dicuci, dikeringkan, dan dilipat rapi untuk kebutuhan harian.",
+    "icon": "Droplets",
+    "duration": "2 hari",
+    "active": true
+  },
+  {
+    "id": "cuci-setrika",
+    "name": "Cuci Setrika",
+    "description": "Paket lengkap cuci, kering, setrika, dan packing wangi.",
+    "icon": "Shirt",
+    "duration": "2-3 hari",
+    "active": true
+  },
+  {
+    "id": "setrika-saja",
+    "name": "Setrika Saja",
+    "description": "Pakaian bersih disetrika rapi dan siap masuk lemari.",
+    "icon": "Sparkles",
+    "duration": "1 hari",
+    "active": true
+  },
+  {
+    "id": "express",
+    "name": "Express",
+    "description": "Layanan cepat untuk cucian prioritas dengan estimasi selesai hari yang sama.",
+    "icon": "Timer",
+    "duration": "6-12 jam",
+    "active": true
+  },
+  {
+    "id": "bed-cover",
+    "name": "Bed Cover",
+    "description": "Pembersihan bed cover, selimut, dan perlengkapan tidur besar.",
+    "icon": "Bed",
+    "duration": "3 hari",
+    "active": true
+  },
+  {
+    "id": "sepatu",
+    "name": "Sepatu",
+    "description": "Cuci sepatu dengan perawatan material dan pengeringan aman.",
+    "icon": "Footprints",
+    "duration": "3-4 hari",
+    "active": true
+  },
+  {
+    "id": "antar-jemput",
+    "name": "Antar Jemput",
+    "description": "Kurir mengambil dan mengantar cucian untuk area sekitar Jember kota.",
+    "icon": "Truck",
+    "duration": "Terjadwal",
+    "active": true
+  }
+]

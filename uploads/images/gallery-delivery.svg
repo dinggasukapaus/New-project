@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title">
+  <title id="title">Kurir antar jemput laundry</title>
+  <rect width="640" height="480" fill="#f4f8fc"/>
+  <rect x="94" y="198" width="294" height="120" rx="20" fill="#1479ff"/>
+  <rect x="388" y="234" width="118" height="84" rx="16" fill="#0f1f3d"/>
+  <rect x="418" y="250" width="54" height="34" rx="8" fill="#d8ecff"/>
+  <circle cx="182" cy="332" r="42" fill="#ffffff" stroke="#0f1f3d" stroke-width="14"/>
+  <circle cx="444" cy="332" r="42" fill="#ffffff" stroke="#0f1f3d" stroke-width="14"/>
+  <rect x="142" y="134" width="148" height="52" rx="14" fill="#ffffff" stroke="#c8d8ea" stroke-width="4"/>
+  <text x="164" y="169" fill="#0f1f3d" font-family="Arial, sans-serif" font-size="26" font-weight="700">Pickup</text>
+</svg>

@@ -1,0 +1,269 @@
+media:
+  input: uploads/images
+  output: /uploads/images
+
+content:
+  - name: business_settings
+    label: Business Settings
+    type: file
+    path: data/settings.json
+    format: json
+    fields:
+      - name: business_name
+        label: Business Name
+        type: string
+        required: true
+      - name: tagline
+        label: Tagline
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: address
+        label: Address
+        type: text
+      - name: phone
+        label: Phone
+        type: string
+      - name: whatsapp_number
+        label: WhatsApp Number
+        type: string
+        description: Use international format without plus sign, for example 6281234567890.
+      - name: email
+        label: Email
+        type: string
+      - name: opening_hours
+        label: Opening Hours
+        type: string
+      - name: google_maps_embed
+        label: Google Maps Embed URL
+        type: string
+      - name: instagram_url
+        label: Instagram URL
+        type: string
+      - name: facebook_url
+        label: Facebook URL
+        type: string
+      - name: tiktok_url
+        label: TikTok URL
+        type: string
+      - name: hero_title
+        label: Hero Title
+        type: string
+      - name: hero_subtitle
+        label: Hero Subtitle
+        type: text
+      - name: hero_image
+        label: Hero Image
+        type: image
+
+  - name: services
+    label: Services
+    type: file
+    path: data/services.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: ID
+        type: string
+        required: true
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: icon
+        label: Icon
+        type: string
+        description: Optional icon name for frontend display.
+      - name: duration
+        label: Duration
+        type: string
+      - name: active
+        label: Active
+        type: boolean
+
+  - name: prices
+    label: Prices
+    type: file
+    path: data/prices.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: ID
+        type: string
+        required: true
+      - name: service_name
+        label: Service Name
+        type: string
+        required: true
+      - name: unit
+        label: Unit
+        type: select
+        options:
+          values: [kg, pcs, pasang, order]
+      - name: price
+        label: Price
+        type: number
+        required: true
+        options:
+          min: 0
+      - name: estimated_days
+        label: Estimated Days
+        type: number
+        options:
+          min: 0
+      - name: active
+        label: Active
+        type: boolean
+
+  - name: testimonials
+    label: Testimonials
+    type: file
+    path: data/testimonials.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: message
+        label: Message
+        type: text
+      - name: rating
+        label: Rating
+        type: number
+        options:
+          min: 1
+          max: 5
+      - name: photo
+        label: Photo
+        type: image
+      - name: active
+        label: Active
+        type: boolean
+
+  - name: gallery
+    label: Gallery
+    type: file
+    path: data/gallery.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: image
+        label: Image
+        type: image
+      - name: description
+        label: Description
+        type: text
+      - name: active
+        label: Active
+        type: boolean
+
+  - name: orders
+    label: Orders
+    type: file
+    path: data/orders.json
+    format: json
+    list: true
+    fields:
+      - name: invoice_number
+        label: Invoice Number
+        type: string
+        required: true
+      - name: customer_name
+        label: Customer Name
+        type: string
+        required: true
+      - name: phone
+        label: Phone
+        type: string
+      - name: address
+        label: Address
+        type: text
+      - name: service
+        label: Service
+        type: string
+      - name: weight
+        label: Weight or Quantity
+        type: number
+        options:
+          min: 0
+          step: 0.5
+      - name: price_per_unit
+        label: Price Per Unit
+        type: number
+        options:
+          min: 0
+      - name: total_price
+        label: Total Price
+        type: number
+        options:
+          min: 0
+      - name: payment_status
+        label: Payment Status
+        type: select
+        options:
+          values: [Belum Bayar, DP, Lunas]
+      - name: order_status
+        label: Order Status
+        type: select
+        options:
+          values: [Baru, Diproses, Dicuci, Dijemur, Disetrika, Packing, Selesai, Diambil, Dikirim]
+      - name: notes
+        label: Notes
+        type: text
+      - name: created_at
+        label: Created At
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: estimated_done_at
+        label: Estimated Done At
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: handled_by
+        label: Handled By
+        type: select
+        options:
+          values: [Budi Santoso, Siti Aminah, Rina Lestari]
+
+  - name: workers
+    label: Workers
+    type: file
+    path: data/workers.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: ID
+        type: string
+        required: true
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: username
+        label: Username
+        type: string
+      - name: role
+        label: Role
+        type: select
+        options:
+          values: [Pemilik, Pekerja]
+      - name: phone
+        label: Phone
+        type: string
+      - name: active
+        label: Active
+        type: boolean

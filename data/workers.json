@@ -1,0 +1,26 @@
+[
+  {
+    "id": "WRK-001",
+    "name": "Budi Santoso",
+    "username": "budi",
+    "role": "Pekerja",
+    "phone": "081234560001",
+    "active": true
+  },
+  {
+    "id": "WRK-002",
+    "name": "Siti Aminah",
+    "username": "siti",
+    "role": "Pekerja",
+    "phone": "081234560002",
+    "active": true
+  },
+  {
+    "id": "WRK-003",
+    "name": "Rina Lestari",
+    "username": "rina",
+    "role": "Pekerja",
+    "phone": "081234560003",
+    "active": true
+  }
+]

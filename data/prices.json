@@ -1,0 +1,58 @@
+[
+  {
+    "id": "price-cuci-kering",
+    "service_name": "Cuci Kering",
+    "unit": "kg",
+    "price": 5000,
+    "estimated_days": 2,
+    "active": true
+  },
+  {
+    "id": "price-cuci-setrika",
+    "service_name": "Cuci Setrika",
+    "unit": "kg",
+    "price": 7000,
+    "estimated_days": 3,
+    "active": true
+  },
+  {
+    "id": "price-setrika-saja",
+    "service_name": "Setrika Saja",
+    "unit": "kg",
+    "price": 4000,
+    "estimated_days": 1,
+    "active": true
+  },
+  {
+    "id": "price-express",
+    "service_name": "Express",
+    "unit": "kg",
+    "price": 12000,
+    "estimated_days": 1,
+    "active": true
+  },
+  {
+    "id": "price-bed-cover",
+    "service_name": "Bed Cover",
+    "unit": "pcs",
+    "price": 25000,
+    "estimated_days": 3,
+    "active": true
+  },
+  {
+    "id": "price-sepatu",
+    "service_name": "Sepatu",
+    "unit": "pasang",
+    "price": 30000,
+    "estimated_days": 4,
+    "active": true
+  },
+  {
+    "id": "price-antar-jemput",
+    "service_name": "Antar Jemput",
+    "unit": "order",
+    "price": 10000,
+    "estimated_days": 0,
+    "active": true
+  }
+]

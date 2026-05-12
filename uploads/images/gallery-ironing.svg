@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title">
+  <title id="title">Ruang setrika laundry</title>
+  <rect width="640" height="480" fill="#f4f8fc"/>
+  <path d="M92 342h456l-42 54H134z" fill="#0f1f3d"/>
+  <rect x="128" y="274" width="384" height="74" rx="16" fill="#ffffff" stroke="#c8d8ea" stroke-width="4"/>
+  <path d="M232 226h192c46 0 76 22 92 64H184c10-38 26-64 48-64z" fill="#1479ff"/>
+  <circle cx="434" cy="256" r="20" fill="#ffffff"/>
+  <rect x="178" y="132" width="112" height="56" rx="12" fill="#d8ecff"/>
+  <rect x="320" y="132" width="140" height="56" rx="12" fill="#bfe0ff"/>
+</svg>
